@@ -1,4 +1,5 @@
-  "class basics": {
+{
+  "basics": {
     "name": "Richard Hendricks",
     "label": "CEO @piedpiper",
     "image": "https://avatars0.githubusercontent.com/u/58340587?v=4",
@@ -36,43 +37,6 @@
     "picture": "https://avatars0.githubusercontent.com/u/58340587?v=4",
     "website": "http://www.piedpiper.com"
   },
-  "skills": [
-    {
-      "name": "C",
-      "level": "Expert",
-      "keywords": [],
-      "rating": 5,
-      "yearsOfExperience": 13
-    },
-    {
-      "name": "Golang",
-      "level": "Intermediate",
-      "keywords": [],
-      "rating": 3,
-      "yearsOfExperience": 7
-    },
-    {
-      "name": "Java",
-      "level": "Advanced",
-      "keywords": [],
-      "rating": 4,
-      "yearsOfExperience": 11
-    },
-    {
-      "name": "TypeScript",
-      "level": "Advanced",
-      "keywords": [],
-      "rating": 4,
-      "yearsOfExperience": 6
-    },
-    {
-      "name": "React",
-      "level": "Beginner",
-      "keywords": [],
-      "rating": 2,
-      "yearsOfExperience": 4
-    }
-  ],
   "projects": [
     {
       "name": "middle-out-compression",
@@ -216,6 +180,6 @@
           "sourceId": "4pWD2ug4kV8"
         }
       ]
-    
-
-
+    }
+  ]
+}
