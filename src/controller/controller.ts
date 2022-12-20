@@ -10,7 +10,12 @@ export const databaseCtrl = {
         const result = myJson.getAllprojects();
         res.json({message: result});
     },
-    
+
+    getOneProject:(req:Request, res:Response)=>{
+        const id = req.params.id;
+        const result = myJson.getOneProject(id);
+        res.json({message: result});
+    },
 }
 
 // export const messageCtrl = {

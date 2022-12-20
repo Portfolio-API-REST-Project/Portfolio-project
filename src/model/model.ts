@@ -13,8 +13,8 @@ export const myJson = {
         //all projects
     },
 
-    getOneproject: ()=>{
-        return database.projects;
+    getOneProject: (position:string)=>{
+        return database.projects[Number(position)];
         //all projects
     },
 }
