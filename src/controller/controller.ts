@@ -6,6 +6,11 @@ export const databaseCtrl = {
         const result = myJson.getAlljson();
         res.json({message: result});
     },
+    getProjects:(req:Request, res:Response)=>{
+        const result = myJson.getAllprojects();
+        res.json({message: result});
+    },
+    
 }
 
 // export const messageCtrl = {

@@ -1,7 +1,6 @@
 {
-"database": {
-
-    "basics": {
+"database":{
+    "basics":{
         "name": "Richard Hendricks",
         "label": "CEO @piedpiper",
         "image": "https://avatars0.githubusercontent.com/u/58340587?v=4",
@@ -11,14 +10,15 @@
       },
     
     
-      "projects": [
+      "projects":[
           {
               "name": "My personal website",
               "description": "",
               "url": "",
               "language": "",
               "githubUrl": "",
-              "image": ""
+              "image": "",
+              "id": 1
           },
     
           {
@@ -27,7 +27,8 @@
               "url": "",
               "language": "",
               "githubUrl": "",
-              "image": ""
+              "image": "",
+              "id": 2
               
           },
     
@@ -37,7 +38,8 @@
               "url": "",
               "language": "",
               "githubUrl": "",
-              "image": ""
+              "image": "",
+              "id": 3
           },
     
           {
@@ -46,7 +48,8 @@
               "url": "",
               "language": "",
               "githubUrl": "",
-              "image": ""
+              "image": "",
+              "id": 4
           },
     
           {
@@ -55,7 +58,8 @@
               "url": "",
               "language": "",
               "githubUrl": "",
-              "image": ""
+              "image": "",
+              "id": 5
           }
         
       ]
