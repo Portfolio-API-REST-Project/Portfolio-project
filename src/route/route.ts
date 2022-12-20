@@ -1,8 +1,8 @@
 import { Request, Response, Router } from "express";
-import { messageCtrl } from '../controller/controller';
+import { databaseCtrl } from '../controller/controller';
 
 const router = Router();
 
-router.get('/portfolio', messageCtrl.getPortfolio);
+router.get('/portfolio', databaseCtrl.getMyjson);
 
 export default router;
