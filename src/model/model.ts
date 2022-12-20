@@ -1,7 +1,7 @@
 
 
 export const messageModel = {
-    getPortfolio:()=>{
-        return { message: "alba" };
-    }
+    // getPortfolio:()=>{
+    //     return { message: "alba" };
+    // }
  }

@@ -1,185 +1,62 @@
+
 {
+
   "basics": {
     "name": "Richard Hendricks",
     "label": "CEO @piedpiper",
     "image": "https://avatars0.githubusercontent.com/u/58340587?v=4",
-    "email": "",
-    "phone": "",
-    "url": "http://www.piedpiper.com",
-    "summary": "CEO of Pied Piper and working on a decentralized internet for everyone - PiperNet. PiperNet is powered by your devices, protective of your privacy, and programmed for your freedom.\n\nToday’s web is an Internet of Kings, dominated by monopolies that crush innovation and promote surveillance capitalism. Discover for yourself why we need PiperNet, the Internet of People™.",
-    "profiles": [
-      {
-        "network": "gitconnected",
-        "username": "richard-hendricks-demo",
-        "url": "https://gitconnected.com/richard-hendricks-demo"
-      },
-      {
-        "network": "GitHub",
-        "username": "richard-hendricks-demo",
-        "url": "https://github.com/richard-hendricks-demo"
-      },
-      {
-        "network": "Twitter",
-        "url": "https://twitter.com/@piedpiper",
-        "username": "@piedpiper"
-      }
-    ],
-    "headline": "Building decentralized internet for everyone",
-    "blog": "https://levelup.gitconnected.com",
-    "yearsOfExperience": 12,
-    "username": "richard-hendricks-demo",
-    "locationAsString": "Silicon Valley, CA",
-    "region": "Silicon Valley, CA",
-    "karma": 26,
-    "id": "817c6e40-54a4-4212-890b-3bd5a1788f61",
-    "followers": 4,
-    "following": 0,
-    "picture": "https://avatars0.githubusercontent.com/u/58340587?v=4",
-    "website": "http://www.piedpiper.com"
+    "email": "richardh@gmail.com",
+    "phone": "34 645 45 45 56",
+    "url": "http://www.piedpiper.com"
   },
+
+
   "projects": [
-    {
-      "name": "middle-out-compression",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "url": "http://www.hooli.xyz/",
-      "highlights": [],
-      "keywords": [],
-      "roles": [],
-      "startDate": "",
-      "endDate": "",
-      "entity": "",
-      "type": "",
-      "displayName": "middle-out-compression",
-      "website": "http://www.hooli.xyz/",
-      "summary": "Making files smaller",
-      "primaryLanguage": "",
-      "languages": [
-        "Go",
-        "C++"
-      ],
-      "libraries": [],
-      "githubUrl": "https://github.com/portfolio-api-demo/middle-out-compression",
-      "repositoryUrl": "https://github.com/portfolio-api-demo/middle-out-compression",
-      "start": {
-        "year": null,
-        "month": null,
-        "day": null
+      {
+          "name": "My personal website",
+          "description": "",
+          "url": "",
+          "language": "",
+          "githubUrl": "",
+          "image": ""
       },
-      "end": {
-        "year": null,
-        "month": null,
-        "day": null
+
+      {
+          "name": "Yum-Yum",
+          "description": "",
+          "url": "",
+          "language": "",
+          "githubUrl": "",
+          "image": ""
+          
       },
-      "images": [
-        {
-          "resolutions": {
-            "micro": {
-              "url": "https://project-images.gitconnectedcontent.com/88a0a093-c7b7-4928-a6fc-b03d174995de-micro",
-              "size": 1228,
-              "width": 32,
-              "height": 22
-            },
-            "thumbnail": {
-              "url": "https://project-images.gitconnectedcontent.com/88a0a093-c7b7-4928-a6fc-b03d174995de-thumbnail",
-              "size": 4326,
-              "width": 224,
-              "height": 155
-            },
-            "mobile": {
-              "url": "https://project-images.gitconnectedcontent.com/88a0a093-c7b7-4928-a6fc-b03d174995de-mobile",
-              "size": 7821,
-              "width": 400,
-              "height": 277
-            },
-            "desktop": {
-              "url": "https://project-images.gitconnectedcontent.com/88a0a093-c7b7-4928-a6fc-b03d174995de-desktop",
-              "size": 7836,
-              "width": 400,
-              "height": 277
-            }
-          }
-        }
-      ],
-      "videos": [
-        {
-          "url": "https://www.youtube.com/watch?v=oGB_VPrld0U&list=PLTTC1K14KAxHj6AftnRUD28SQaoVauvl3",
-          "source": "youtube",
-          "sourceId": "oGB_VPrld0U"
-        }
-      ]
-    },
-    {
-      "name": "pied-piper-coin",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "url": "http://www.piedpiper.com/",
-      "highlights": [],
-      "keywords": [],
-      "roles": [],
-      "startDate": "",
-      "endDate": "",
-      "entity": "",
-      "type": "",
-      "displayName": "pied-piper-coin",
-      "website": "http://www.piedpiper.com/",
-      "summary": "The currency of the open web",
-      "primaryLanguage": "",
-      "languages": [
-        "TypeScript",
-        "Go"
-      ],
-      "libraries": [
-        "Node.js",
-        "React"
-      ],
-      "githubUrl": "https://github.com/portfolio-api-demo/pied-piper-coin",
-      "repositoryUrl": "https://github.com/portfolio-api-demo/pied-piper-coin",
-      "start": {
-        "year": null,
-        "month": null,
-        "day": null
+
+      {
+          "name": "Market-Polo",
+          "description": "",
+          "url": "",
+          "language": "",
+          "githubUrl": "",
+          "image": ""
       },
-      "end": {
-        "year": null,
-        "month": null,
-        "day": null
+
+      {
+          "name": "Frankenwheel of Doom",
+          "description": "",
+          "url": "",
+          "language": "",
+          "githubUrl": "",
+          "image": ""
       },
-      "images": [
-        {
-          "resolutions": {
-            "micro": {
-              "url": "https://project-images.gitconnectedcontent.com/d9c4429c-de9b-4678-9f32-577dfcf89a08-micro",
-              "size": 1337,
-              "width": 32,
-              "height": 25
-            },
-            "thumbnail": {
-              "url": "https://project-images.gitconnectedcontent.com/d9c4429c-de9b-4678-9f32-577dfcf89a08-thumbnail",
-              "size": 8197,
-              "width": 224,
-              "height": 176
-            },
-            "mobile": {
-              "url": "https://project-images.gitconnectedcontent.com/d9c4429c-de9b-4678-9f32-577dfcf89a08-mobile",
-              "size": 26404,
-              "width": 600,
-              "height": 470
-            },
-            "desktop": {
-              "url": "https://project-images.gitconnectedcontent.com/d9c4429c-de9b-4678-9f32-577dfcf89a08-desktop",
-              "size": 28130,
-              "width": 800,
-              "height": 627
-            }
-          }
-        }
-      ],
-      "videos": [
-        {
-          "url": "https://www.youtube.com/watch?v=4pWD2ug4kV8",
-          "source": "youtube",
-          "sourceId": "4pWD2ug4kV8"
-        }
-      ]
-    }
+
+      {
+          "name": "Api-Rest",
+          "description": "",
+          "url": "",
+          "language": "",
+          "githubUrl": "",
+          "image": ""
+      }
+    
   ]
 }
