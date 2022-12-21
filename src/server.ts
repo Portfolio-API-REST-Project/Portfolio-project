@@ -5,6 +5,7 @@ import router from "./route/route"
 
 const app = express()
 app.use(cors());
+app.use(express.json());
 app.use (router);
 // app.get("/portfolio", (req: Request, res: Response) => {
 //         res.json({ message: "name" })
