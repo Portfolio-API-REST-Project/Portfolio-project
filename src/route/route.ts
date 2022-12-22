@@ -11,6 +11,6 @@ router.get('/portfolio/project/:id', databaseCtrl.getOneProject);
 
 router.post('/portfolio/project', databaseCtrl.saveOneProject);
 
-// router.delete('/portfolio/project', databaseCtrl.deleteThisProject);
+// router.delete('/project/:id', databaseCtrl.deleteThisProject);
 
 export default router;

@@ -29,10 +29,9 @@ export const myJson = {
     //     return message;
     // },
 
-    // deleteOneProject:(project: any) =>{
-    //     // const id = parseInt(req.body.id);
-    //     database.projects.splice(project);
-    //     return database.projects
+    // deleteOneProject:(project: string) =>{
+    //     // database.projects[Number(project)];
+    //     return database.projects.splice(database.projects.findIndex(project));
     // },
 }
 

@@ -23,11 +23,13 @@ export const databaseCtrl = {
         res.json({message: result});
     },
 
-//     deleteThisProject: (req:Request, res:Response) =>{
-//         const project = req.body
-//         const result = myJson.deleteOneProject(project)
-//         res.json({message: result});
-// },
+    // deleteThisProject: (req:Request, res:Response) =>{
+    //     const id = req.params.id;
+    //     const result = myJson.deleteOneProject(id)
+    //     res.json({message: result});
+    // },
+
+
 
 // export const messageCtrl = {
 //     getPortfolio: (req: Request, res: Response) => {
