@@ -21,18 +21,12 @@ export const myJson = {
     postProject:(project: any)=>{
         database.projects.push(project);
         return database.projects
+        //add a project
     },
 
-    // editProject: (name: string, id:[number]) => {
-    //     console.log (message)
-    //     database.projects[id] = message;
-    //     return message;
-    // },
+    
 
-    // deleteOneProject:(project: string) =>{
-    //     // database.projects[Number(project)];
-    //     return database.projects.splice(database.projects.findIndex(project));
-    // },
+    
 }
 
 

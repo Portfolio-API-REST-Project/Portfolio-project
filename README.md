@@ -52,3 +52,20 @@ $ npx ts-jest config:init
     ...
     "test": "jest"
   },
+
+
+  The Api content is:
+
+  - package.json
+  - package-lock.json
+  - tsconfig.json
+  - jest.config.js
+  - src:
+
+        - model (TS model.ts, datos.json)
+        - controller (TS controller.ts)
+        - route (TS server.ts)
+
+  - TS server.ts
+  - request.rest
+  - .gitignore      
