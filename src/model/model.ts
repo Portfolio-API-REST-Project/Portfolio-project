@@ -1,6 +1,14 @@
 // import { resetMocks } from "../../jest.config"
 import {database} from "./data.json";
 
+export const myjson = {
+    getAlldata: ()=>{
+        return database;
+    },
+}
+
+const project: Array<string> = [];
+
 
 export const myJson = {
     getAlljson: ()=>{
@@ -24,10 +32,19 @@ export const myJson = {
         //add a project
     },
 
-    // putProject: (name: string, id: number) => {
-    //     database.projects[id].name = name
-    //     return fs.writeFileSync('src/models/db.json', JSON.stringify(database, null, 4), 'utf-8')
-    // },
+    putOneProject : (id:number, message: string) => {
+        console.log (project);
+        database.projects.[id] = message;
+        return "Project modified";
+        //modify a project
+    },
+
+    deleteOneProject: (id:number, mensaje: string) =>{
+        console.log (mensaje);
+        database.projects.splice(id,1);
+        return mensaje;
+
+    },
 
     // deleteProject: (req: Request, res: Response) => {
     //     const id: number = parseInt(req.params.id);
@@ -35,8 +52,7 @@ export const myJson = {
     //     res.json({result});
     // },
 
- 
-}
+};
 
 
 

@@ -1,4 +1,4 @@
-import { Request, Response, Router } from "express";
+import { Router } from "express";
 import { databaseCtrl } from '../controller/controller';
 
 const router = Router();
@@ -11,8 +11,8 @@ router.get('/portfolio/project/:id', databaseCtrl.getProjectById);
 
 router.post('/portfolio/project', databaseCtrl.saveOneProject);
 
-// router.put('/portfolio/project/:id', databaseCtrl.putProject)
+router.put('/portfolio/project/:id', databaseCtrl.putOnePoject);
 
-// router.delete('/portfolio/project/:id', databaseCtrl.deleteProject)
+router.delete('/portfolio/project/:id', databaseCtrl.deleteOneProject );
 
 export default router;

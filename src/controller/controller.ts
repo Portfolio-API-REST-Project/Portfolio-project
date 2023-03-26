@@ -18,25 +18,31 @@ export const databaseCtrl = {
     },
 
     saveOneProject:(req:Request, res:Response)=>{
-        const project = req.body
-        const result = myJson.postProject(project)
-        res.json({message: "Project added successfully"});
+        const message = req.body
+        const result = myJson.postProject(message)
+        res.json({project: result});
     },
 
-    // put request to modify a Project by id with the properties that are passed in the body, if a property is not passed, it should not be modified
-    // modifyProject: (req: Request, res: Response) => {
-    //     const id: number = parseInt(req.params.id);
-    //     const projectToUpdate = {
-    //         ...myJson.getProjectById(id), // get the original project object "spread operator"
-    //         ...req.body, // override with any properties present in the request body
-    //     };
-    //     const result = myJson.putProject(projectToUpdate, id);
-    //     res.json({result});
-    //},
+    putOnePoject: (req: Request, res: Response) => {
+        const message = req.body
+        const id = parseInt(req.params.id);
+        //messages[id] = message;
+        const result = myJson.putOneProject(id, message);
+
+        res.json({ message: `Array is modified ${id} with ${message}`});
+    }, 
+
+    deleteOneProject: (req: Request, res: Response) => {
+        const message = req.body
+        const id = parseInt(req.params.id);
+        const result = myJson.deleteOneProject(id, message);
+
+        res.json({ message: `Array deleted ${id}` });
+    },
 
     // deleteProject: (req: Request, res: Response) => {
     //     const id: number = parseInt(req.params.id);
     //     const result = myJson.deleteProject(id);
     //     res.json({message:"Project successfully deleted"});
     // 
-}
+};
