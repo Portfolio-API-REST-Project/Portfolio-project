@@ -1,5 +1,5 @@
 // import { resetMocks } from “../../jest.config”
-import {database} from “./data.json”;
+import database from '../data.json';
 export const myjson = {
     getAlldata: ()=>{
         return database;

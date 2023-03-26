@@ -7,11 +7,9 @@
 //         res.json(result)
 //     },
    
-    
-
 // };
-import {myJson} from ‘../model/model’;
-import {Request,Response} from ‘express’;
+import {myJson} from '../model/model';
+import {Request,Response} from 'express';
 export const databaseCtrl = {
     getMyjson:(req:Request, res:Response)=>{
         const result = myJson.getAlljson();
