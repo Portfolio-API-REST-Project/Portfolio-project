@@ -68,4 +68,26 @@ $ npx ts-jest config:init
 
   - TS server.ts
   - request.rest
-  - .gitignore      
+  - .gitignore     
+  
+  
+  The endpoints required:
+
+ VERB                   RESOURCE                          REQUEST                       DESCRIPTION
+
+ GET                    /portfolio                         none                       return the whole content of the portfolio
+  
+ GET                    /portfolio/project                 none                       return all the projects
+
+ POST                   /portfolio/project               "name",                      add one project to portfolio
+                                                         "description",
+                                                         "url",
+                                                         "languages":[],
+                                                         "githubUrl",
+                                                         "image"
+
+ GET                     /portfolio/project/{id}           none                       return the content of one project
+
+ PUT                     /portfolio/project/{id}          "name"                      edit the content of one project
+
+ DELETE                  /portfolio/project{id}            none                       delete one portfolio

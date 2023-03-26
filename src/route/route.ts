@@ -7,10 +7,12 @@ router.get('/portfolio', databaseCtrl.getMyjson);
 
 router.get('/portfolio/project', databaseCtrl.getProjects);
 
-router.get('/portfolio/project/:id', databaseCtrl.getOneProject);
+router.get('/portfolio/project/:id', databaseCtrl.getProjectById);
 
 router.post('/portfolio/project', databaseCtrl.saveOneProject);
 
-// router.delete('/project/:id', databaseCtrl.deleteThisProject);
+// router.put('/portfolio/project/:id', databaseCtrl.putProject)
+
+// router.delete('/portfolio/project/:id', databaseCtrl.deleteProject)
 
 export default router;
