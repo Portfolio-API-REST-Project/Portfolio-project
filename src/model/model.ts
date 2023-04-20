@@ -24,21 +24,41 @@ export const myJson = {
         return database.projects
         //add a project
     },
-    putOneProject : (id:number, message: string) => {
-        console.log (project);
-        database.projects.[id] = message;
-        return “Project modified”;
-        //modify a project
-    },
-    deleteOneProject: (id:number, mensaje: string) =>{
-        console.log (mensaje);
-        database.projects.splice(id,1);
-        return mensaje;
-    },
+    // putOneProject : (id:number, message: string) => {
+    //     console.log (project);
+    //     database.projects.[id] = message;
+    //     return “Project modified”;
+    //     //modify a project
+    // },
+    // deleteOneProject: (id:number, mensaje: string) =>{
+    //     console.log (mensaje);
+    //     database.projects.splice(id,1);
+    //     return mensaje;
+    // },
     // deleteProject: (req: Request, res: Response) => {
     //     const id: number = parseInt(req.params.id);
     //     const result = myJson.deleteProject(id);
     //     res.json({result});
     // },
+    putOneProject: (id: string, updatedProject: any) => {
+        const project = myJson.getProjectById(id);
+        if (project) {
+            const index = database.projects.indexOf(project);
+            database.projects[index] = { ...project, ...updatedProject };
+            return database.projects[index];
+        } else {
+            return null;
+        }
+    },
+    deleteOneProject: (id: string) => {
+        const project = myJson.getProjectById(id);
+        if (project) {
+            const index = database.projects.indexOf(project);
+            database.projects.splice(index, 1);
+            return true;
+        } else {
+            return false;
+        }
+    }
 };
 
