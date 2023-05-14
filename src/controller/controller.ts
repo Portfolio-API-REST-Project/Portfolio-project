@@ -1,13 +1,3 @@
-// import {messageModel} from '../model/model';
-// import {Request,Response} from 'express';
-
-// export const messageCtrl = {
-//     getPortfolio: (req: Request, res: Response) => {
-//         const result = messageModel.getPortfolio();
-//         res.json(result)
-//     },
-   
-// };
 import {myJson} from '../model/model';
 import {Request,Response} from 'express';
 import database from '../data.json';
@@ -19,7 +9,7 @@ export const databaseCtrl = {
     },
     getProjects:(req:Request, res:Response)=>{
         const result = myJson.getAllprojects();
-        res.json({message: result});
+        res.json(result);
     },
     getProjectById:(req:Request, res:Response)=>{
         const id = req.params.id;
@@ -27,17 +17,17 @@ export const databaseCtrl = {
         res.json({message: result});
     },
     saveOneProject:(req:Request, res:Response)=>{
-        const message = req.body
+        const message = req.body;
         const result = myJson.postProject(message)
-        res.json({project: result});
+        res.json(result);
     },
-    // putOnePoject: (req: Request, res: Response) => {
-    //     const message = req.body
-    //     const id = parseInt(req.params.id);
-    //     //messages[id] = message;
-    //     const result = myJson.putOneProject(id, message);
-    //     res.json({ message: `Array is modified ${id} with ${message}`});
-    // },
+    putOneProject: (req: Request, res: Response) => {
+        const updatedProject = req.body;
+        const id = parseInt(req.params.id);
+        //messages[id] = message;
+        const result = myJson.putOneProject(id, updatedProject);
+        res.json(result);
+    },
     // deleteOneProject: (req: Request, res: Response) => {
     //     const message = req.body
     //     const id = parseInt(req.params.id);
@@ -49,18 +39,18 @@ export const databaseCtrl = {
     //     const result = myJson.deleteProject(id);
     //     res.json({message:“Project successfully deleted”});
     //
-    putOneProject:(req:Request, res:Response)=>{
-        const id = req.params.id;
-        const message = req.body;
-        const project = myJson.getProjectById(id);
-        if (project) {
-            const index = database.projects.indexOf(project);
-            database.projects[index] = message;
-            res.json({ message: "Project updated successfully", project: database.projects[index] });
-        } else {
-            res.status(404).json({ message: "Project not found" });
-        }
-    },
+    // putOneProject:(req:Request, res:Response)=>{
+    //     const id = req.params.id;
+    //     const message = req.body;
+    //     const project = myJson.getProjectById(id);
+    //     if (project) {
+    //         const index = database.projects.indexOf(project);
+    //         database.projects[index] = message;
+    //         res.json({ message: "Project updated successfully", project: database.projects[index] });
+    //     } else {
+    //         res.status(404).json({ message: "Project not found" });
+    //     }
+    // },
     deleteOneProject:(req:Request, res:Response)=>{
         const id = req.params.id;
         const project = myJson.getProjectById(id);
